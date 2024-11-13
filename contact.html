@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min portefølje</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="headerContainer">
+        <div class="topnav">
+            <nav>
+                <a href="index.html"><i class="topnav_home"></i> Home</a>
+                <a href="about.html"><i class="topnav_about"></i> About</a>
+                <a href="subject.html"><i class="topnav_subject"></i> Subject</a>
+                <a href="contact.html"><i class="topnav_contact"></i> Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <div id="contactContainer">
+        <form action="/index.html">
+
+            <div>
+                <label for="fname">Fornavn:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+            </div>
+
+            <div>
+                <label for="lname">Etternavn:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+            </div>
+
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+            </div>
+
+            <div>
+                <label for="phone">Telefon nummer:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+            </div>
+
+            <div>
+                <p><label for="melding">Melding</label></p>
+                <textarea id="melding" name="melding" rows="4" cols="50"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
