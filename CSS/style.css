@@ -25,6 +25,8 @@ body {
     margin-right: 20px;
 }
 
+/*lag slik at monogram blir home knappen. <a nettlenke også bildelenke inni den også </a>*/
+
 .header-name {
     color: white;
     margin: 0;
@@ -35,34 +37,38 @@ body {
 
 .greeting {
     width: 80%;
-    height: 500px;
+    height: 75vh;
     background-color: rgb(55, 55, 55);
     color: white;
     margin: 10px auto;
     padding: 30px;
     text-align: left;
-    position: relative;
 }
 
 .greeting-content {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    margin-top: 39px;
     font-size: 25px;
 }
 
-.greetingTitle {
+.greeting-title {
     color: rgb(92, 51, 180);
     font-weight: bold;
     font-size: 35px;
 }
 
 img {
-    width: 400px;
-    height: 500px;
+    width: 52vh;
+    height: 65vh;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+main {
+    height: 100vh;
 }
 
 .footer {
@@ -72,12 +78,9 @@ img {
     align-items: center;
     background-color: rgb(92, 51, 180);
     color: white;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    min-height: 100px;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    height: 20vh;
 }
 
 #contact-container {
