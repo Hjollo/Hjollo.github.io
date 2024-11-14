@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 
-.headerContainer {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +25,7 @@ body {
     margin-right: 20px;
 }
 
-.headerName {
+.header-name {
     color: white;
     margin: 0;
     position: absolute;
@@ -35,7 +35,7 @@ body {
 
 .greeting {
     width: 80%;
-    min-height: 500px;
+    height: 500px;
     background-color: rgb(55, 55, 55);
     color: white;
     margin: 10px auto;
@@ -44,7 +44,7 @@ body {
     position: relative;
 }
 
-.greetingContent {
+.greeting-content {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -80,7 +80,7 @@ img {
     bottom: 0;
 }
 
-#contactContainer {
+#contact-container {
     /* Skal kanskje ta vekk contact.html */
     /* Lager kanskje egen CSS for contact.html og kanskje de andre html dokumentene */
     color: white;
