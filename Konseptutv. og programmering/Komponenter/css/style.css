@@ -1,0 +1,77 @@
+body {
+    margin-left: 20px;
+    padding: 0;
+    max-width: 1150px;
+    margin: auto;
+    background-color: rgb(120, 16, 16);
+    color: white;
+    font-family: sans-serif;
+}
+
+#Tittel {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#Intro {
+    padding-bottom: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.topBilde {
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.box {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.box img {
+    margin-right: 20px;
+}
+
+.box h2 {
+    margin-block-start: 0px;
+}
+
+#Avslutting {
+    padding-bottom: 20px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.nettlenkeListe {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.nettlenkeListe a:hover {
+    color: blue;
+}
+
+.nettlenkeListe li {
+    margin-bottom: 20px;
+}
+
+.nettlenkeListe a {
+    color: rgb(255, 255, 255);
+}
+
+#nettlenkeTittel {
+    margin-left: 22px;
+}

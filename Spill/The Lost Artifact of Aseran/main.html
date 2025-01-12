@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lost Artifact of Aseran</title>
+    <link rel="icon" type="image" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="audio/background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h1>The Lost Artifact of Aseran</h1>
+
+    <div id="story" class="info-text">
+        <p>You are <strong>Rynn</strong>, a young treasure hunter, standing at the entrance of a forgotten temple in the
+            jungle of Aseran. Legends speak of the <strong>Eye of Vyr</strong>, a relic capable of altering reality itself. What will you do?</p>
+    </div>
+
+    <img id="image" class="image" src="images/temple.png" alt="Temple">
+
+
+    <div id="choice">
+        <button onclick="choose(1)">Step inside cautiously</button>
+        <button onclick="choose(2)">Light a torch and look for traps</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
