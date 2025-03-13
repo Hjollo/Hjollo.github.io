@@ -1,5 +1,5 @@
 /*I HTML*/
-/*Legg til favicon. Monogram trur eg* Lag en lenke for spill*/
+/*Lag en lenke for spill*/
 
 body {
     font-family: Arial, sans-serif;
@@ -213,6 +213,7 @@ main {
 
 /*Prod. og historiefortelling*/
 /*Kanskje lag felles class for prod, kons og tekn. Kanskje legge til videoer jeg har laget*/
+/*Legg til video*/
 .prod-main {
     display: flex;
     flex-direction: column;
@@ -286,7 +287,8 @@ main {
 
 
 /*Konseptutv. og programmering*/
-/*Flarpy-Bird kunne trengt meir arbeid og funker ikkje til nettsiden ennå siden det er Unity*/
+/*Flarpy-Bird kunne trengt meir arbeid og funker ikkje til nettsiden ennå. Jeg må enten konvertere spillet til å funke i nettleser, eller ha det lokalt i "exe" fil. */
+/*Legg til hover på boksene*/
 
 .kons-main div {
     display: flex;
@@ -343,6 +345,7 @@ main {
 }
 
 /*Teknologiforståelse*/
+/*Legg til video*/
 
 .tekn-main div {
     display: flex;
@@ -360,6 +363,13 @@ main {
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: bold;
+}
+
+#packet-tracer img,
+#fire-maskiner img,
+#windows-linux img {
+    width: 1200px;
+    height: 650px;
 }
 
 /*CONTACT HTML*/
