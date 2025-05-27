@@ -13,23 +13,36 @@
     <div class="header-container">
         <div class="topnav">
             <nav>
-                <a href="index.html"> <img src="images/Monogram Hvit.png" alt="AHV Monogram-Home knapp"></a>
-                <a href="about.html">Om meg</a>
-                <a href="subjects.html">Emner</a>
-                <a href="contact.html">Kontakt</a>
-            </nav>
+                <nav>
+                    <a href="index.html"> <img src="images/Monogram Hvit.png" alt="AHV Monogram-Home knapp"></a>
+                    <a href="about.html">Om meg</a>
+                    <div class="dropdown">
+                        <a href="subjects.html" class="dropbtn">Emner</a>
+                        <div class="dropdown-content">
+                            <a href="prod. og historiefortelling.html">Prod. og historiefortelling</a>
+                            <a href="konseptutv. og programmering.html">Konseptutv. og programmering</a>
+                            <a href="teknologiforståelse.html">Teknologiforståelse</a>
+                        </div>
+                    </div>
+                    <a href="contact.html">Kontakt</a>
+                </nav>
         </div>
         <h1 class="header-name">Om meg</h1>
     </div>
 
-    <div>
-        <p>Jeg er født i 1998 og er oppvokst på Stord. 
-            Jeg bruker mye tid på PC. Jeg liker godt å se på film og og spille spill, og interesserer meg også for hvordan de blir lagd. 
-            I tillegg liker jeg ekstra godt strategi og historie, og ser ofte på eller spiller noe relatert til det. 
-            
-
+    <div id="about-textbox">
+        <img id="about-image" src="images/Om Anders.png" alt="Bilde av Anders">
+        <p class="about-text">
+            Jeg er født i 1998 og er oppvokst på Stord. 
+            Jeg bruker mye tid på PC. 
+            Jeg har en stor interesse for teknologi, film og spill, spesielt strategi og historie. 
+            Jeg liker ikke bare å spille, men også å forstå hvordan spill og programmer utvikles.
+            <br><br>
+            For tiden studerer jeg VG1 Media- og Informasjonsteknologi ved Stord VGS. 
+            Jeg har som mål å bli en dyktig IT-tekniker og ønsker å bygge bred kompetanse innen data og teknologi, slik at jeg kan løse varierte IT-relaterte utfordringer.
         </p>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

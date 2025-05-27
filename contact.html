@@ -15,7 +15,14 @@
             <nav>
                 <a href="index.html"> <img src="images/Monogram Hvit.png" alt="AHV Monogram-Home knapp"></a>
                 <a href="about.html">Om meg</a>
-                <a href="subjects.html">Emner</a>
+                <div class="dropdown">
+                    <a href="subjects.html" class="dropbtn">Emner</a>
+                    <div class="dropdown-content">
+                        <a href="prod. og historiefortelling.html">Prod. og historiefortelling</a>
+                        <a href="konseptutv. og programmering.html">Konseptutv. og programmering</a>
+                        <a href="teknologiforståelse.html">Teknologiforståelse</a>
+                    </div>
+                </div>
                 <a href="contact.html">Kontakt</a>
             </nav>
         </div>
@@ -23,7 +30,6 @@
 
     <div id="contact-container">
         <form action="/index.html">
-
             <div>
                 <label for="fname">Fornavn:</label><br>
                 <input type="text" id="fname" name="fname"><br>
@@ -52,9 +58,10 @@
             <div>
                 <input type="submit" value="Submit">
             </div>
-
         </form>
-
     </div>
 
+    <script src="js/script.js"></script>
 </body>
+
+</html>

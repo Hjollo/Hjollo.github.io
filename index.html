@@ -10,28 +10,39 @@
 </head>
 
 <body>
+    <div id="countdown"></div>
+
     <div class="header-container">
         <div class="topnav">
             <nav>
                 <a href="index.html"> <img src="images/Monogram Hvit.png" alt="AHV Monogram-Home knapp"></a>
                 <a href="about.html">Om meg</a>
-                <a href="subjects.html">Emner</a>
+                <div class="dropdown">
+                    <a href="subjects.html" class="dropbtn">Emner</a>
+                    <div class="dropdown-content">
+                        <a href="prod. og historiefortelling.html">Prod. og historiefortelling</a>
+                        <a href="konseptutv. og programmering.html">Konseptutv. og programmering</a>
+                        <a href="teknologiforståelse.html">Teknologiforståelse</a>
+                    </div>
+                </div>
                 <a href="contact.html">Kontakt</a>
             </nav>
         </div>
         <h1 class="header-name">Anders Vågenes</h1>
     </div>
 
+    <button id="color-changer" onclick="toggleTheme()">Bytt stil</button>
+
     <main>
         <div class="index-main">
             <div class="index-content">
-                <img id="index-image" src="images/Under Construction.jpg" alt="Bilde av Anders">
+                <img id="index-image" src="images/Index bilde.png" alt="Bilde av Anders">
                 <div id="index-text">
                     <ul id="index-title">Litt om meg</ul>
                     <ul>Født 1998. Oppvokst på Stord</ul>
                     <ul>Liker PC-spill og film, også historie og strategi</ul>
                     <ul>Går IT og medieproduksjon ved Stord VGS</ul>
-                    <ul>Ønsker å jobbe som IT-konsulent</ul>
+                    <ul>Ønsker å jobbe som IT - hjelp</ul>
                     <ul>Jobber for å bli allsidig innen datamaskiner og IT</ul>
                 </div>
             </div>
@@ -39,13 +50,34 @@
     </main>
 
     <div class="footer">
-        <ul id="footer-email"><img src="images/Email.png" alt="Bilde av et Email lignende brev">anders@gmail.com</ul>
-        <ul id="footer-phone"><img src="images/Phone.png" alt="Bilde av en telefon">407 XX XXX</ul>
-        <ul id="footer-linkedin"><a href="https://www.linkedin.com/in/anders-vågenes-3394242a2" target="_blank"> <img
-                    src="images/linkedin.png" alt="Bilde av logoen til Linkedin">LinkedIn</a></ul>
-        <ul id="footer-melding"><a href="contact.html"> <img src="images/Melding.png" alt="Bilde av et brev">Kontakt
-                meg</a></ul>
+        <div class="footer-left">
+            <ul class="footer-lenke"><img src="images/Email.png" alt="Bilde av et Email lignende brev">anders@gmail.com</ul>
+            <ul class="footer-lenke"><img src="images/Phone.png" alt="Bilde av en telefon">407 XX XXX</ul>
+            <ul id="footer-linkedin"><a href="https://www.linkedin.com/in/anders-vågenes-3394242a2" target="_blank"> <img
+                        src="images/linkedin.png" alt="Bilde av logoen til Linkedin">LinkedIn</a></ul>
+            <ul id="footer-melding"><a href="contact.html"> <img src="images/Melding.png" alt="Bilde av et brev">Kontakt
+                    meg</a></ul>
+        </div>
+        <div class="footer-center">
+            <ul id="footer-katogori">Emner:</ul>
+            <ul><a id="footer-lenke" href="prod. og historiefortelling.html">Prod. og historiefortelling</a></ul>
+            <ul><a id="footer-lenke" href="konseptutv. og programmering.html">Konseptutv. og programmering</a></ul>
+            <ul><a id="footer-lenke" href="teknologiforståelse.html">Teknologiforståelse</a></ul>
+        </div>
+        <div class="footer-right">
+            <ul id="footer-katogori">Spill:</ul>
+            <ul><a id="footer-lenke" href="">Unity: Flarpy Bird</a></ul>
+            <ul><a id="footer-lenke" href="https://hjollo.github.io/The-Lost-Artifact-of-Aseran/">The Lost Artifact of Aseran</a></ul>
+            <ul><a id="footer-lenke" href="Teknologiforståelse/Wheel of Names/index.html">KI lagd: WheelSpinn</a></ul>
+            <ul><a id="footer-lenke" href="Teknologiforståelse/Memory-spill/index.html">KI lagd: Memory</a></ul>
+            <ul id="footer-katogori">Nettsider:</ul>
+            <ul><a id="footer-lenke" href="Konseptutv. og programmering/Komponenter/komponenter.html">PC-Komponenter</a></ul>
+            <ul><a id="footer-lenke" href="Konseptutv. og programmering/Musikkfestival/BeatFest 2024.html">Musikkfestival</a></ul>
+            <ul><a id="footer-lenke" href="https://hjollo.github.io/breaking-bad-api-test/">Breaking Bad-API</a></ul>            
+        </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

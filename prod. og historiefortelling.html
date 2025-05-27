@@ -13,21 +13,71 @@
     <div class="header-container">
         <div class="topnav">
             <nav>
-                <a href="index.html"> <img src="images/Monogram Hvit.png" alt="AHV Monogram-Home knapp"></a>
-                <a href="about.html">Om meg</a>
-                <a href="subjects.html">Emner</a>
-                <a href="contact.html">Kontakt</a>
-                <a href="konseptutv. og programmering.html">Konseptutv. og pr..</a>
-                <a href="teknologiforståelse.html">Teknologiforståelse</a>
-            </nav>
+                <nav>
+                    <a href="index.html"> <img src="images/Monogram Hvit.png" alt="AHV Monogram-Home knapp"></a>
+                    <a href="about.html">Om meg</a>
+                    <div class="dropdown">
+                        <a href="subjects.html" class="dropbtn">Emner</a>
+                        <div class="dropdown-content">
+                            <a href="prod. og historiefortelling.html">Prod. og historiefortelling</a>
+                            <a href="konseptutv. og programmering.html">Konseptutv. og programmering</a>
+                            <a href="teknologiforståelse.html">Teknologiforståelse</a>
+                        </div>
+                    </div>
+                    <a href="contact.html">Kontakt</a>
+                </nav>
 
 
         </div>
-        <h1 class="header-name">Prod. og historiefortelling</h1>
+        <h1 class="header-name">Produksjon og historiefortelling</h1>
     </div>
 
     <main>
         <div class="prod-main">
+            <div class="prod-video">
+                <div class="video-container">
+                    <video width="500" height="400" controls>
+                        <source src="video/60 sec.mp4" type="video/mp4">
+                    </video>
+                    <p>Video: 60 sec</p>
+                </div>
+
+                <div class="video-container">
+                    <video width="500" height="400" controls>
+                        <source src="video/Reservoir Dogs Intro.mp4" type="video/mp4">
+                    </video>
+                    <p>Video: Reservoir Dogs Intro</p>
+                </div>
+
+                <div class="video-container">
+                    <video width="500" height="400" controls>
+                        <source src="video/Sjakkduell.mp4" type="video/mp4">
+                    </video>
+                    <p>Video: Sjakkduell</p>
+                </div>
+            </div>
+
+            <div class="prod-video">
+                <div class="video-container">
+                    <video width="500" height="400" controls>
+                        <source src="video/Intervju.mp4" type="video/mp4">
+                    </video>
+                    <p>Video: 5 på gaten</p>
+                </div>
+                <div class="video-container">
+                    <video width="500" height="400" controls>
+                        <source src="video/Drone lang-video.mp4" type="video/mp4">
+                    </video>
+                    <p>Video: Drone lang</p>
+                </div>
+                <div class="video-container">
+                    <video width="500" height="400" controls>
+                        <source src="video/Drone kort.mp4" type="video/mp4">
+                    </video>
+                    <p>Video: Drone kort</p>
+                </div>
+            </div>
+
             <div>
                 <ul id="monogram"><img src="images/Monogram.png" alt="AHV monogram i svart">Monogram</ul>
                 <ul id="visittkort1"><img src="images/Visittkort mal.png" alt="Visittkort forside">Visittkort forside
@@ -53,7 +103,8 @@
                 <ul id="bildeplakat"><img src="images/Bildeplakat.jpg"
                         alt="Bilde av mange bilder i 4*5 format av en og en sekk">Bildeplakat av sekker</ul>
                 <ul id="bokbind"><img src="images/Bokbind.png"
-                        alt="Bilde av bokbind laget av Anders av Mr.Robot serien">Mr. Robot bokbind</ul>
+                        alt="Bilde av bokbind laget av Anders av Mr.Robot serien">Mr.
+                    Robot bokbind</ul>
             </div>
 
             <div class="prod-div5">
@@ -68,8 +119,14 @@
                 <ul><img src="images/Lysmaling 3.png"
                         alt="Lysmaling duell, hvor lysmaling magi treffer hverandre i midten">Lysmaling duell 2</ul>
             </div>
+
+            <div class="t-skjorte">
+                <ul><img src="images/T-skjorte 5.jpg" alt="T-skjorte design">T-skjorte design</ul>
+            </div>
         </div>
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

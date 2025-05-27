@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Names</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Wheel of Names 🎡</h1>
+
+    <div class="controls">
+        <textarea id="name-input" placeholder="Skriv inn navn/oppgaver, ett per linje..."></textarea>
+        <button id="update-wheel">Oppdater hjul</button>
+    </div>
+
+    <div class="wheel-container">
+        <canvas id="wheel" width="500" height="500"></canvas>
+        <div class="arrow">▼</div>
+    </div>
+
+    <button id="spin-button">SPINN 🎲</button>
+    <p id="result">Vinner: <span id="winner-name">?</span></p>
+
+    <script src="wheel.js"></script>
+</body>
+</html>
