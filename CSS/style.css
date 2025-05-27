@@ -6,6 +6,7 @@
     --nav-hover: rgb(208, 202, 197);
     --footer-bg: rgb(60, 60, 60);
     --link-hover: rgb(0, 0, 255);
+    --border: rgb(46, 46, 46);
 }
 
 body {
@@ -29,6 +30,7 @@ h1 {
     position: relative;
     margin-top: 0;
     background-color: var(--footer-bg);
+    border-bottom: 4px solid var(--border);
 }
 
 .topnav nav {
@@ -176,7 +178,6 @@ video {
 
 
 /*footer*/
-/*Lenker til emner i .footer? */    
 .footer {
     display: flex;
     justify-content: space-between;
@@ -187,6 +188,7 @@ video {
     width: 100%;
     padding: 20px;
     flex-wrap: wrap;
+    border-top: 4px solid var(--border);
 }
 
 .footer-left {
@@ -197,7 +199,16 @@ video {
     flex: 1;
 }
 
-.footer-center {
+.footer-center-left {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+}
+
+.footer-center-right {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -285,6 +296,7 @@ video {
     background-color: var(--footer-bg);
     padding: 25px;
     margin-top: 40px;
+    border: 4px solid var(--border);
 }
 
 .about-text {
@@ -300,6 +312,7 @@ video {
     display: block;
     width: 558px;
     height: 443px;
+    border: 4px solid var(--border);
 }
 
 /*SUBJECTS HTML*/
@@ -350,8 +363,8 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-bg);
-    color: var(--secondary-text);
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
     margin: auto;
 }
 
@@ -504,11 +517,25 @@ video {
 }
 
 /*Teknologiforståelse*/
+.tekn-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 .tekn-main div {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
+}
+
+.tekn-video div {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .tekn-main img {
@@ -523,43 +550,49 @@ video {
     font-weight: bold;
 }
 
-#tinkercad img,
-#packet-tracer img,
 #fire-maskiner img,
-#windows-linux img {
-    width: 1200px;
-    height: 650px;
+#windows-linux img,
+#packet-tracer img {
+    width: 1400px;
+    height: 750px;
 }
 
 #tp-link-windows img {
-    width: 950px;
-    height: 475px;
+    width: 1062px;
+    height: 550px;
 }
 
 #tp-link-mobil img {
-    width: 200px;
-    height: 475px;
+    width: 300px;
+    height: 550px;
 }
 
 .tekn-video {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 40px;
     margin-top: 20px;
 }
 
-.tekn-video div {
-    display: block;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 18px;
-    font-weight: bold;
+#dokumentasjon-draw img {
+    width: 561px;
+    height: 750px;
+}
+
+#dokumentasjon-mindmup img {
+    width: 1000px;
+    height: 750px;
+}
+
+#tinkercad img,
+#slice img {
+    width: 780px;
+    height: 650px;
 }
 
 /*CONTACT HTML*/
-/*Bilde? Overskrift? Styling? JavaScript koding?*/
-#contact-container {
+.contact-container {
     margin-left: 60px;
     margin-top: 20px;
 }
