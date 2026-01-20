@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8" />
+    <title>Varm / Kald – IT-ord</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- VENSTRE: Forklaring -->
+    <aside class="explanation">
+        <h2>Om spillet</h2>
+        <p>Finn det hemmelige IT-ordet. Du kan velge mellom to moduser:</p>
+        <ul>
+            <li><strong>Semantisk:</strong> Rangering basert på betydning/likhet.</li>
+            <li><strong>Bokstav:</strong> Hvor mange bokstaver som matcher og plassering (#).</li>
+        </ul>
+        <p>Ordliste kan brukes som hjelp, men er ikke obligatorisk.</p>
+    </aside>
+
+    <!-- MIDTEN: Spillet -->
+    <main class="container main-game">
+        <h1>Varm / Kald</h1>
+        <p class="subtitle">Gjett det hemmelige IT-ordet</p>
+
+        <label for="modeSelect">Velg modus:</label>
+        <select id="modeSelect">
+            <option value="semantic" selected>Semantisk</option>
+            <option value="letter">Bokstav</option>
+        </select>
+
+        <div class="heat-indicator">
+            <div class="heat-bar">
+                <div id="heatMarker" class="heat-marker"></div>
+            </div>
+            <div id="heatLabel" class="heat-label">Ingen gjetning ennå</div>
+        </div>
+
+        <div id="rankLabel" class="rank-label"></div>
+
+        <input
+            type="text"
+            id="guessInput"
+            placeholder="Skriv et ord"
+            autocomplete="off"
+        />
+        <button id="guessButton">Gjett</button>
+
+        <div id="history" class="history"></div>
+    </main>
+
+    <!-- HØYRE: Ordliste -->
+    <aside class="wordlist-panel">
+        <button id="toggleListButton">Vis / skjul ordliste</button>
+        <div id="wordListContainer" class="word-list hidden">
+            <h3>IT-ordliste</h3>
+            <div id="wordList"></div>
+        </div>
+    </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
