@@ -562,6 +562,11 @@ video {
     height: 750px;
 }
 
+#draw img {
+    width: 700px;
+    height: 775px;
+}
+
 #tp-link-windows img {
     width: 1062px;
     height: 550px;
